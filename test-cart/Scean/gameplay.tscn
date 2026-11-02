@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c2e1k838ung5q"]
+
+[ext_resource type="PackedScene" uid="uid://b4anujfumohnf" path="res://Scean/foreverBG.tscn" id="1_hiqv1"]
+[ext_resource type="PackedScene" uid="uid://bfnwptkv7dhud" path="res://Scean/Car.tscn" id="2_xyos7"]
+[ext_resource type="Script" uid="uid://cr24102gvl6to" path="res://Script/gener_cake.gd" id="3_d2i5q"]
+[ext_resource type="PackedScene" uid="uid://re5gmnfh16el" path="res://Scean/ScoreScean.tscn" id="4_3jamr"]
+
+[node name="Gameplay" type="Node2D" unique_id=1527649231]
+
+[node name="ForeverBg" parent="." unique_id=59823542 instance=ExtResource("1_hiqv1")]
+
+[node name="Car" parent="." unique_id=774586552 instance=ExtResource("2_xyos7")]
+position = Vector2(482, 831)
+
+[node name="generCake" type="Node2D" parent="." unique_id=759591476]
+script = ExtResource("3_d2i5q")
+
+[node name="Timer" type="Timer" parent="generCake" unique_id=1189064378]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=731394703]
+
+[node name="ScoreScean" parent="CanvasLayer" unique_id=637357314 instance=ExtResource("4_3jamr")]
+
+[connection signal="timeout" from="generCake/Timer" to="generCake" method="_on_timer_timeout"]

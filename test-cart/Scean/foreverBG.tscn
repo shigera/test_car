@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4anujfumohnf"]
+
+[ext_resource type="Script" uid="uid://breu5hbj0vs75" path="res://Script/forever_bg.gd" id="1_13wpi"]
+[ext_resource type="Texture2D" uid="uid://b5ucuyh1vuy1j" path="res://asset/background.png" id="1_tf4ut"]
+
+[node name="ForeverBg" type="ParallaxBackground" unique_id=59823542]
+script = ExtResource("1_13wpi")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=1669377547]
+motion_mirroring = Vector2(0, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer" unique_id=2105129728]
+position = Vector2(-2, 1)
+scale = Vector2(4, 4)
+texture = ExtResource("1_tf4ut")
+centered = false

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://re5gmnfh16el"]
+
+[ext_resource type="Script" uid="uid://cw0xp1mw66reb" path="res://Scean/score_scean.gd" id="1_i8rpc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bpjrr"]
+font_size = 70
+
+[node name="ScoreScean" type="Control" unique_id=637357314]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i8rpc")
+
+[node name="Label" type="Label" parent="." unique_id=1028546505]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score:"
+label_settings = SubResource("LabelSettings_bpjrr")
