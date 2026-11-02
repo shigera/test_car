@@ -11,6 +11,7 @@
 
 [node name="Car" parent="." unique_id=774586552 instance=ExtResource("2_xyos7")]
 position = Vector2(482, 831)
+scale = Vector2(4.5, 4.5)
 
 [node name="generCake" type="Node2D" parent="." unique_id=759591476]
 script = ExtResource("3_d2i5q")
